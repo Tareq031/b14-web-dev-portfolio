@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    
+}
+img {
+    max-width: 100%;
+}
+/*common styles*/
+.common-btn {
+   background-color: #fd6e0a;
+   padding: 6px 15px;
+   border-radius: 22px;
+   font-size: 22px;
+   font-weight: bold;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+.outline-btn {
+   background-color: white;
+   padding: 6px 15px;
+   border-radius: 22px;
+   font-size: 22px;
+   font-weight: bold;
+   color: #fd6e0a;
+   border: 1px solid #fd6e0a;
+   cursor: pointer;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+nav {
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+    
+}
+.logo {
+    
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo-r {
+    color: #fd6e0a;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+ul li a {
+    text-decoration: none;
+}
+.hero-parent-root {
+    background-color: #faede2;
+  
+}
+ 
+.hero-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.hero-left h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+hero-left-p1 {
+    font-size: 28px;
+    font-weight: 600px;
+}
+.hero-left-btn-parent{
+    margin-top: 12px;
+}
+.abount-parent {
+    background-color: #faede2;
+    margin: 70px auto;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+
+}
+.abount-parent p{
+   margin: 20px 0px;
+}
+.about-box-parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+   
+}
+.about-box-parent .box {
+    background-color: rgb(226, 227, 216);
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+/* what i do section css */
+.what-i-do-parent {
+    /* background-color: #faede2; */
+    margin: 70px auto;
+    /* border-radius: 20px;
+    padding: 40px; */
+    text-align: center;
+}
+.what-i-do-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.what-i-do-container .what-i-do-card {
+    /* background-color: rgb(226, 227, 216); */
+    border: 1px solid #fd6e0a;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: l;
+   
+}
+.what-i-do-container .what-i-do-card h2{
+    margin: 10px 0px;
+}
+.what-i-do-container .what-i-do-card p{
+    color: #787370;
+    font-size: 15px;
+}
+
+
+/* resume section css */
+
+
+
+.resume{
+    padding:60px 0;
+}
+
+.resume h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:60px;
+    font-weight:bold;
+}
+
+.resume-content{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.column{
+    flex:1;
+}
+
+.column h3{
+    font-size:28px;
+    margin-bottom:25px;
+    color:#444;
+}
+
+.item{
+    border-bottom:1px solid #ddd;
+    padding-bottom:25px;
+    margin-bottom:25px;
+}
+
+.item:last-child{
+    border-bottom:none;
+}
+
+.item h4{
+    font-size:24px;
+    color:#333;
+    margin-bottom:8px;
+}
+
+.item h5{
+    font-size:18px;
+    color:#666;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.item p{
+    font-size:16px;
+    line-height:1.8;
+    color:#777;
+}
+
+.btn-area{
+    text-align:center;
+    margin-top:50px;
+}
+
+.btn{
+    display:inline-block;
+    background:#FD6E0A;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:5px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e55d00;
+}
+
+/* My Amazing Works css */
+.my-amazing-parent {
+    /* background-color: #faede2;
+    margin: 70px auto;
+    border-radius: 20px;
+    padding: 40px;
+     */
+    text-align: center;
+
+}
+.gallery{
+    margin-top: 30px;
+    gap: 12px;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    grid-template-areas:
+    "one two three"
+    "four two six"
+    "four five six"
+    
+}
+.gallery img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+   
+}
+.box-1{
+    grid-area:one;
+}
+.box-2{
+    grid-area:two;
+}
+.box-3{
+    grid-area:three;
+}
+.box-4{
+    grid-area:four;
+}
+.box-5{
+    grid-area:five;
+}
+.box-6{
+    grid-area:six;
+}
+
+/* footer styles */
+footer {
+    text-align: center;
+    margin-top: 70px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #faede2;
+    padding: 20px;
+    border-radius: 10px;
+}
+.footer-left p{
+    margin: 20px 0px;
+}
+footer form{
+    padding: 20px;
+}
+footer form input, footer form textarea {
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    padding: 8px 15px;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.footer-icon-parent span{
+    color: #dc85c9;
+    font-size: 30px;
+}
